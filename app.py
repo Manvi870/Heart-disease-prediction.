@@ -19,12 +19,12 @@ st.sidebar.write("Developed by MANVI-BALODI...")
 col1, col2 = st.columns(2)
 
 # numeric inputs
-age = st.number_input("Age")
-bp = st.number_input("Resting BP")
-chol = st.number_input("Cholesterol")
-fbs = st.number_input("Fasting BS")
-maxhr = st.number_input("Max HR")
-oldpeak = st.number_input("Oldpeak")
+age = st.number_input("Age", min_value=1, max_value=100, value=25)
+bp = st.number_input("Resting BP", min_value=80, max_value=200, value=120)
+chol = st.number_input("Cholesterol", min_value=100, max_value=400, value=200)
+fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl", [0, 1])
+maxhr = st.number_input("Max Heart Rate", min_value=60, max_value=220, value=150)
+oldpeak = st.number_input("Oldpeak", min_value=0.0, max_value=6.0, value=1.0)
 
 # categorical inputs
 sex = st.selectbox("Sex", ["F", "M"])
