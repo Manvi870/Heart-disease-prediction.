@@ -10,10 +10,10 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 st.markdown("<h1 style='text-align: center; color: red;'> Heart Disease Prediction</h1>", unsafe_allow_html=True)
 st.markdown("### Enter patient details to check risk")
 
-st.markdown("---")
+st.markdown("---DEVELOPER")
 st.sidebar.title("ℹ️ About")
 st.sidebar.write("This app predicts heart disease risk using Machine Learning.")
-st.sidebar.write("Developed by You ")
+st.sidebar.write("Developed by MANVI-BALODI...")
 
 # Layout (2 columns)
 col1, col2 = st.columns(2)
